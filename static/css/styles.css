@@ -1,0 +1,359 @@
+:root {
+    /* Fuentes */
+    --fuentePrincipal: 'Montserrat', sans-serif;
+    /* Paleta de colores */
+    --primario: #729CA8;
+    --secundario: #CEDAD2;
+    --terciario: #9FB8BB;
+    --contraste: #9CAE81;
+    --oscuro: #121B16;
+    --blanco: #FFFFFF;
+    /* Font Weight */
+    --delgada: 300;
+    --regular: 400;
+    --bold: 700;
+    --black: 900;
+    /* Separacion */
+    --separacion: 5rem
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--secundario);
+}
+
+
+/* Contenedor */
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuentePrincipal);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Utilidades */
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.delgada {
+    font-weight: var(--delgada);
+}
+
+.regular {
+    font-weight: var(--regular);
+}
+
+.bold {
+    font-weight: var(--bold);
+}
+
+.bolder {
+    font-weight: var(--bolder);
+}
+
+
+/* Header */
+
+.header {
+    background-image: url(../img/header.jpg);
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header_texto {
+    text-align: center;
+    color: white;
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .header_texto {
+        margin-top: 15rem;
+    }
+}
+
+.op-layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.titulo {
+    font-weight: var(--bold);
+}
+
+.logo {
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 5rem;
+    }
+}
+
+.navegacion__enlace {
+    margin-top: 1.5rem;
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+/* Sobre museo */
+
+.sobre-museo {
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .sobre-museo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+    }
+}
+
+.contenido-museo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-museo-h2 {
+    font-size: 3.5rem;
+}
+
+.contenido-museo-lugar {
+    color: var(--primario);
+}
+
+.contenido-museo-texto {
+    line-height: 2;
+}
+
+
+/* Exhibiciones */
+
+.exhibiciones {
+    background-color: var(--primario);
+    padding: var(--separacion) 0;
+}
+
+.exhibiciones-h3 {
+    text-align: center;
+    color: var(--blanco);
+}
+
+.exhibiciones-p {
+    text-align: center;
+    color: var(--blanco);
+    text-transform: uppercase;
+    margin: var(--separacion) 0;
+}
+
+@media (min-width: 768px) {
+    .exhibiciones-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+    }
+    .exhibicion {
+        padding-top: 2.5rem;
+    }
+}
+
+.exhibicion-tipo {
+    margin-top: 2.5rem;
+    text-align: center;
+    color: var(--oscuro);
+    font-size: 2rem;
+    font-weight: var(--delgada);
+}
+
+.bg-1 {
+    background-color: var(--secundario);
+}
+
+.bg-2 {
+    background-color: var(--terciario);
+}
+
+.exhibicion-tipo:after {
+    content: '';
+    width: 20rem;
+    height: 10rem;
+    display: block;
+    margin: 2rem auto 0 auto;
+    background-size: 10rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.temporal .exhibicion-tipo:after {
+    background-image: url(/static/img/sand-clock.png);
+}
+
+.permanente .exhibicion-tipo:after {
+    background-image: url(/static/img/exhibition.png);
+}
+
+.lista {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 2.5rem;
+    font-weight: bold;
+}
+
+span {
+    font-weight: var(--regular);
+}
+
+.bg-1 .lista li:nth-child(odd) {
+    background-color: #aabab0;
+}
+
+.bg-2 .lista li:nth-child(odd) {
+    background-color: #859da0;
+}
+
+
+/* Boletos */
+
+.bg-boletos {
+    background-color: #3E5D65;
+}
+
+.boletos {
+    padding: 5rem 0;
+}
+
+.boletos-h3 {
+    text-align: center;
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .contenedor-boletos {
+        margin-top: 2.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+    }
+}
+
+.plan {
+    color: var(--blanco);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pase {
+    width: 100%;
+}
+
+thead {
+    background-color: var(--primario);
+}
+
+th {
+    font-size: 2.5rem;
+}
+
+td {
+    color: black;
+    font-size: 2rem;
+    text-align: left;
+}
+
+tbody {
+    background-color: var(--blanco);
+}
+
+tfoot {
+    background-color: var(--secundario);
+}
+
+.precio {
+    text-align: center;
+    font-size: 2.5rem;
+}

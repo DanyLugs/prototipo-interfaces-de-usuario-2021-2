@@ -1,0 +1,59 @@
+.titulo-principal {
+    font-size: 5rem;
+    padding-top: 5rem;
+    text-align: center;
+    font-weight: var(--bold);
+}
+
+.conferencia {
+    background-color: var(--primario);
+}
+
+.conferencia-lugar {
+    color: rgb(58, 58, 58);
+}
+
+@media (min-width: 768px) {
+    .bios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+    }
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.dot {
+    font-weight: var(--regular);
+}
+
+.imagen-bio {
+    margin-top: 5rem;
+}
+
+.nombre {
+    font-weight: var(--bold);
+}
+
+@media (min-width: 768px) {
+    .libros {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5rem;
+    }
+}
+
+.resize-book {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+
+.libros-section {
+    background-color: var(--terciario);
+}

@@ -50,3 +50,12 @@
 .evento-h4 {
     font-size: 4rem;
 }
+
+.enlace {
+    text-transform: none;
+    color: var(--oscuro);
+}
+
+.enlace:hover {
+    color: var(--oscuro);
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX | Conciertos</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Preload -->
+    <link rel="preload" href="static/css/normalize.css" as="style">
+    <link rel="stylesheet" href="static/css/normalize.css">
+
+    <link rel="preload" href="static/css/styles.css" as="style">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <link rel="preload" href="static/css/styles.css" as="style">
+    <link rel="stylesheet" href="static/css/styles-salas.css">
+
+    <link rel="preload" href="static/css/styles.css" as="style">
+    <link rel="stylesheet" href="static/css/styles-conferencia.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <!-- for FF, Chrome, Opera -->
+    <link rel="icon" type="image/png" href="/static/img/icon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/static/img/icon/favicon-32x32.png" sizes="32x32">
+    <!-- End Icon -->
+</head>
+
+<body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/static/img/up-arrow.png" class="resize" alt="up-arrow"></button>
+
+    <header class="header">
+
+        <div class="op-layer">
+            <div class="contenedor">
+                <div class="barra">
+
+                    <a class="logo centrar-texto" href="index.html">
+                        <div class="no-margin centrar-texto">
+                            <img src="/static/img/logo.png" alt="logo">
+                        </div>
+                    </a>
+
+                    <nav class="navegacion">
+                        <a href="index.html" class="navegacion__enlace">Inicio</a>
+                        <a href="salas.html" class="navegacion__enlace">Salas</a>
+                        <a href="eventos.html" class="navegacion__enlace">Eventos</a>
+                        <a href="galeria.html" class="navegacion__enlace">Galería</a>
+                    </nav>
+
+                </div>
+            </div>
+
+            <div class="header_texto">
+                <h2 class="no-margin titulo">Museo sobre UI/UX</h2>
+                <p>Recopialción de articulos, arte y obras que contribuyeron al diseño web</p>
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+        <h2 class="titulo-principal">La conferencia de la semana</h2>
+
+        <div class="sobre-museo contenedor conferencia">
+
+            <div class="contenido-museo">
+                <h2 class="titulo contenido-museo-h2">"Focus on results, not on perfect UX"</h2>
+                <p class="contenido-museo-lugar bold conferencia-lugar">Auditorio Pincipal, Zona Sur</p>
+                <p class="contenido-museo-texto regular">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus libero facere obcaecati repudiandae necessitatibus dolore labore a quaerat laborum nemo natus explicabo cum dolor neque, nostrum placeat, eveniet commodi autem? Lorem ipsum,
+                    dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="imagen">
+                <img src="/static/img/conferencia.jpg" alt="conferencia-fotografia">
+            </div>
+        </div>
+    </section>
+
+    <main class="contenedor-salas sombra">
+        <h2 class="titulo-salas">¿Quién es?</h2>
+
+        <div class="bios">
+
+            <section class="bio">
+                <h3>Un poco sobre: <span class="nombre">Donald Norman</span></h3>
+                <ul>
+                    <li class="dot">Es uno de los diseñadores industriales más importantes en la historia moderna de la disciplina y tiene experiencia trabajando con Apple y HP</li>
+                    <li class="dot">Con formación de psicólogo e ingeniero, se enfoca en el diseño estratégico y es parte del personal docente de las universidades de Harvard, California, San Diego, Northwestern y del Instituto Avanzado de Ciencia y Tecnología en Corea
+                        del Sur.</li>
+                    <li class="dot">Es autor de libros como: ‘The Design of Everyday Things’, ‘Living with Complexity’ y ‘Emotional Design: Why We Love or Hate Everyday Things’ que abordan temas sobre experiencia de usuario.</li>
+                </ul>
+            </section>
+            <section class="bio">
+                <img class="imagen imagen-bio" src="/static/img/donnorman.jpg" alt="sala1">
+            </section>
+        </div>
+    </main>
+
+
+    <main class="contenedor-salas sombra libros-section">
+        <h2 class="titulo-salas">Apoya al autor</h2>
+        <h3 class="text-center">Te invitamos a echarle un ojo a estos libros de nuestro conferencista</h3>
+
+        <div class="libros">
+
+            <section class="bio">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text text-center book-title">The Design of Everyday Things</p>
+                    </div>
+                    <img class="resize-book" src="/static/img/book1.jpg" alt="Card image">
+                    <div class="card-body text-center">
+                        <button type="button" class="btn btn-dark btn-lg">Comprar</button> </div>
+                </div>
+            </section>
+
+            <section class="bio">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text text-center book-title">Living with Complexity</p>
+                    </div>
+                    <img class="resize-book" src="/static/img/book3.jpg" alt="Card image">
+                    <div class="card-body text-center">
+                        <button type="button" class="btn btn-dark btn-lg">Comprar</button> </div>
+                </div>
+            </section>
+
+            <section class="bio">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text text-center book-title">Emotional Design</p>
+                    </div>
+                    <img class="resize-book" src="/static/img/book2.jpg" alt="Card image">
+                    <div class="card-body text-center">
+                        <button type="button" class="btn btn-dark btn-lg">Comprar</button> </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2021 Copyright:
+            <a class="text-dark" href="https://github.com/DanyLugs">Daniel Lugo Cano</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="/static/js/totop.js"></script>
+
+</body>
+
+</html>

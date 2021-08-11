@@ -22,9 +22,18 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon -->
+    <!-- for FF, Chrome, Opera -->
+    <link rel="icon" type="image/png" href="/static/img/icon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/static/img/icon/favicon-32x32.png" sizes="32x32">
+    <!-- End Icon -->
+
 </head>
 
 <body>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/static/img/up-arrow.png" class="resize" alt="up-arrow"></button>
 
     <header class="header">
 
@@ -55,6 +64,84 @@
         </div>
 
     </header>
+
+    <section class="contenedor-eventos">
+        <h2 class="eventos-titulo">Nuestros Eventos</h2>
+
+        <div class="evento">
+            <div class="evento__imagen">
+                <img class="ajuste" src="static/img/evento1.jpeg" alt="imagen del evento">
+            </div>
+
+            <div class="evento__informacion">
+                <h4 class="no-margin evento-h4">Conciertos</h4>
+                <p class="evento__label">Precio:
+                    <span class="evento__info">Gratis</span>
+                </p>
+                <p class="evento__label">Cupo:
+                    <span class="evento__info">1500 personas</span>
+                </p>
+                <p class="evento_descripcion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, obcaecati quisquam. Veniam voluptatum exercitationem nam? Quam ratione odio mollitia magni aut quisquam modi. Esse eum quos, nesciunt sit id repellat?
+                </p>
+            </div>
+            <!-- .evento-informacion -->
+        </div>
+        <!-- .evento -->
+
+        <div class="evento">
+            <div class="evento__imagen">
+                <img class="ajuste" src="static/img/evento2.jpeg" alt="imagen del evento">
+            </div>
+
+            <div class="evento__informacion">
+                <h4 class="no-margin evento-h4">Conferencias</h4>
+                <p class="evento__label">Precio:
+                    <span class="evento__info">Incluido con boleto deluxe</span>
+                </p>
+                <p class="evento__label">Cupo:
+                    <span class="evento__info">250 personas</span>
+                </p>
+                <p class="evento_descripcion">
+                    Sed a elit dapibus dolor gravida imperdiet sed quis quam. Morbi vulputate consectetur sem rhoncus consequat. Proin velit purus, ornare auctor blandit interdum, mattis quis risus.
+                </p>
+            </div>
+            <!-- .evento-informacion -->
+        </div>
+        <!-- .evento -->
+
+        <div class="evento">
+            <div class="evento__imagen">
+                <img class="ajuste" src="static/img/evento3.jpg" alt="imagen del evento">
+            </div>
+
+            <div class="evento__informacion">
+                <h4 class="no-margin evento-h4">Proyecciones</h4>
+                <p class="evento__label">Precio:
+                    <span class="evento__info">$20</span>
+                </p>
+                <p class="evento__label">Cupo:
+                    <span class="evento__info">100 personas</span>
+                </p>
+                <p class="evento_descripcion">
+                    Sed a elit dapibus dolor gravida imperdiet sed quis quam. Morbi vulputate consectetur sem rhoncus consequat. Proin velit purus, ornare auctor blandit interdum, mattis quis risus.
+                </p>
+            </div>
+            <!-- .evento-informacion -->
+        </div>
+        <!-- .evento -->
+    </section>
+
+    <footer class="footer">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2021 Copyright:
+            <a class="text-dark" href="https://github.com/DanyLugs">Daniel Lugo Cano</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="/static/js/totop.js"></script>
 
 </body>
 

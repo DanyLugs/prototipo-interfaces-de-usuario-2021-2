@@ -1,0 +1,52 @@
+.contenedor-eventos {
+    border-radius: 50%;
+    background-color: var(--terciario);
+    max-width: 120rem;
+    width: 90%;
+    width: min(90%, 120rem);
+    margin: 5rem auto;
+}
+
+.eventos-titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.ajuste {
+    padding-left: 3rem;
+}
+
+.evento {
+    padding: 3rem 0;
+    border-bottom: 5px solid var(--primario);
+}
+
+@media (min-width: 768px) {
+    .evento {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.evento:last-of-type {
+    border: none;
+}
+
+.evento__label {
+    font-weight: var(--bold);
+}
+
+.evento__info {
+    font-weight: var(--regular);
+}
+
+.evento__label,
+.evento__info {
+    font-size: 2rem;
+}
+
+.evento-h4 {
+    font-size: 4rem;
+}

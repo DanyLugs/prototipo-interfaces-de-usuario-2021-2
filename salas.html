@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UI/UX | Salas</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Preload -->
+    <link rel="preload" href="static/css/normalize.css" as="style">
+    <link rel="stylesheet" href="static/css/normalize.css">
+
+    <link rel="preload" href="static/css/styles.css" as="style">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <link rel="preload" href="static/css/styles.css" as="style">
+    <link rel="stylesheet" href="static/css/styles-salas.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="op-layer">
+            <div class="contenedor">
+                <div class="barra">
+
+                    <a class="logo centrar-texto" href="index.html">
+                        <div class="no-margin centrar-texto">
+                            <img src="/static/img/logo.png" alt="logo">
+                        </div>
+                    </a>
+
+                    <nav class="navegacion">
+                        <a href="salas.html" class="navegacion__enlace">Salas</a>
+                        <a href="#" class="navegacion__enlace">Eventos</a>
+                        <a href="#" class="navegacion__enlace">Galerias</a>
+                    </nav>
+
+                </div>
+            </div>
+
+            <div class="header_texto">
+                <h2 class="no-margin titulo">Museo sobre UI/UX</h2>
+                <p>Recopialción de articulos, arte y obras que contribuyeron al diseño web</p>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="contenedor-salas sombra">
+        <h2 class="titulo-salas">Salas</h2>
+
+        <div class="servicios">
+
+            <section class="servicio">
+                <h3>Basketweave</h3>
+                <div class="iconos">
+                    <img class="imagen" src="/static/img/sala1.jpg" alt="sala1">
+                </div>
+                <p>Designed to resemble the crisscross weave of a basket, basketweave patterns are either woven or printed onto a fabric to create a symmetrical effect.</p>
+            </section>
+            <section class="servicio">
+                <h3>Brocade</h3>
+                <div class="iconos">
+                    <img class="imagen" src="/static/img/sala2.jpg" alt="sala1">
+                </div>
+                <p>“A typically shuttle-woven fabric most commonly made with silver or gold thread, brocade has a raised appearance similar to embroidery,” Hall says.</p>
+            </section>
+            <section class="servicio">
+                <h3>Ditsy</h3>
+                <div class="iconos">
+                    <img class="imagen" src="/static/img/sala3.webp" alt="sala1">
+                </div>
+                <p>“A ditsy print typically has flowers (but not always) that are small in scale and is an all-over pattern with a random repeat,” Okin says.</p>
+            </section>
+            <section class="servicio">
+                <h3>Chevron</h3>
+                <div class="iconos">
+                    <img class="imagen" src="/static/img/sala4.png" alt="sala1">
+                </div>
+                <p>Marked by a pattern of zigzagging stripes, chevron fabrics have long been a favorite of designers looking to infuse contemporary flair into a subdued space.</p>
+            </section>
+            <section class="servicio">
+                <h3>Chinoiserie</h3>
+                <div class="iconos">
+                    <img class="imagen" src="/static/img/sala5.jpg" alt="sala1">
+                </div>
+                <p>Drawing from traditional Chinese motifs, chinoiserie style fabrics often feature elaborate scenes of florals, animals, pagodas, and children. </p>
+            </section>
+            <section class="servicio">
+                <h3>Damask</h3>
+                <div class="iconos">
+                    <img class="imagen" src="/static/img/sala6.png" alt="sala1">
+                </div>
+                <p>“Martha Stewart is a big fan of damask, and this rich-looking fabric has been used everywhere from English castles to Park Avenue apartments,” Okin says. </p>
+            </section>
+        </div>
+
+    </main>
+
+    <section class="contenedor-salas sombra galeria">
+        <h3 class="galeria-h3">Galería</h3>
+        <ul class="galeria-imagenes">
+            <li>
+                <img src="/static/img/thumb/1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="thummb1">
+            </li>
+            <li>
+                <img src="/static/img/thumb/2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" alt="thummb2">
+            </li>
+            <li>
+                <img src="/static/img/thumb/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" alt="thummb3">
+            </li>
+            <li>
+                <img src="/static/img/thumb/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" alt="thummb4">
+            </li>
+            <li>
+                <img src="/static/img/thumb/5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="thummb5">
+            </li>
+            <li>
+                <img src="/static/img/thumb/6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt="thummb6">
+            </li>
+            <li>
+                <img src="/static/img/thumb/7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" alt="thummb7">
+            </li>
+            <li>
+                <img src="/static/img/thumb/8.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" alt="thummb8">
+            </li>
+            <li>
+                <img src="/static/img/thumb/9.jpeg" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" alt="thummb9">
+            </li>
+            <li>
+                <img src="/static/img/thumb/10.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" alt="thummb10">
+            </li>
+            <li>
+                <img src="/static/img/thumb/11.webp" onclick="openModal();currentSlide(11)" class="hover-shadow cursor" alt="thummb11">
+            </li>
+            <li>
+                <img src="/static/img/thumb/12.jpeg" onclick="openModal();currentSlide(12)" class="hover-shadow cursor" alt="thummb12">
+            </li>
+        </ul>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">1 / 12</div>
+                    <img src="/static/img/grande/1.jpeg" style="width:100%" alt="grande1">
+                </div>
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">2 / 12</div>
+                    <img src="/static/img/grande/2.jpeg" style="width:100%" alt="grande2">
+                </div>
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">3 / 12</div>
+                    <img src="/static/img/grande/3.jpg" style="width:100%" alt="grande3">
+                </div>
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">4 / 12</div>
+                    <img src="/static/img/grande/4.jpg" style="width:100%" alt="grande2">
+                </div>
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">5 / 12</div>
+                    <img src="/static/img/grande/5.jpg" style="width:100%" alt="grande2">
+                </div>
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="/static/img/grande/6.jpg" style="width:100%" alt="grande2">
+                </div>
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">7 / 12</div>
+                    <img src="/static/img/grande/7.jpg" style="width:100%" alt="grande2">
+                </div>
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">8 / 12</div>
+                    <img src="/static/img/grande/8.jpg" style="width:100%" alt="grande2">
+                </div>
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">9 / 12</div>
+                    <img src="/static/img/grande/9.jpeg" style="width:100%" alt="grande2">
+                </div>
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">10 / 12</div>
+                    <img src="/static/img/grande/10.jpg" style="width:100%" alt="grande2">
+                </div>
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">11 / 12</div>
+                    <img src="/static/img/grande/11.webp" style="width:100%" alt="grande2">
+                </div>
+
+                <div class="mySlides w-100">
+                    <div class="numbertext">12 / 12</div>
+                    <img src="/static/img/grande/12.jpeg" style="width:100%" alt="grande2">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2021 Copyright:
+            <a class="text-dark" href="https://github.com/DanyLugs">Daniel Lugo Cano</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="/static/js/galeria1.js"></script>
+
+
+</body>
+
+</html>
